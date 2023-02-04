@@ -1,0 +1,475 @@
+{
+  "#": "Snippet para Blogger by (https://github.com/framboide/snippet-blogger-sublime)",
+  "completions": [
+  	// Core / layouts / Canvas 2.0
+	{
+		"contents" : "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n<!DOCTYPE html>\n<html b:css=\"false\" b:defaultwidgetversion=\"2\" b:js=\"true\" b:layoutsVersion=\"3\" expr:dir=\"data:blog.languageDirection\" expr:lang=\"data:blog.locale\" b:responsive=\"true\">\n<head>\n<!-- title -->\n<title><data:view.title.escaped/></title>\n<!-- Styles -->\n<b:if cond='!data:view.isLayoutMode'>\n<b:skin><![CDATA[ \n]]></b:skin>\n<b:else/>\n<b:template-skin><![CDATA[ \n ]]></b:template-skin>\n<!-- Fin -->\n</head>\n<body>\n<b:section id=\"Blog1\">\n    <b:widget id=\"Blog1\" type=\"Blog\" title=\"Entradas del blog\">\n      <b:includable id=\"main\"></b:includable>\n   </b:widget>\n</b:section>\n</body>\n</html>",
+		"trigger": "blogger-3\t Blogger template layouts v3"
+	},
+	{
+		"contents" : "<b:comment>CORE (1.0) Do not make changes!</b:comment>\n<b:defaultmarkups>\n<b:defaultmarkup type='All'>\n<b:includable id='main'/>\n<b:includable id='content'/>\n</b:defaultmarkup>\n<b:defaultmarkup type='AdSense,Blog'>\n<b:includable id='defaultAdUnit'/>\n</b:defaultmarkup>\n<b:defaultmarkup type='Blog,PopularPosts,FeaturedPost'>\n<b:includable id='blogThisShare'/>\n<b:includable id='bylineByName'/>\n<b:includable id='bylineRegion'/>\n<b:includable id='commentsLink'/>\n<b:includable id='commentsLinkIframe'/>\n<b:includable id='emailPostIcon'/>\n<b:includable id='facebookShare'/>\n<b:includable id='footerBylines'/>\n<b:includable id='headerByline'/>\n<b:includable id='googlePlusShare'/>\n<b:includable id='linkShare'/>\n<b:includable id='otherSharingButton'/>\n<b:includable id='platformShare'/>\n<b:includable id='postAuthor'/>\n<b:includable id='postCommentsLink'/>\n<b:includable id='postJumpLink'/>\n<b:includable id='postLabels'/>\n<b:includable id='postLocation'/>\n<b:includable id='postReactions'/>\n<b:includable id='postShareButtons'/>\n<b:includable id='postTimestamp'/>\n<b:includable id='sharingButton'/>\n<b:includable id='sharingButtonContent'/>\n<b:includable id='sharingButtons'/>\n<b:includable id='sharingButtonsMenu'/>\n<b:includable id='sharingPlatformIcon'/>\n</b:defaultmarkup>\n<b:defaultmarkup type='PopularPosts,FeaturedPost'>\n<b:includable id='snippetedPostByline'/>\n<b:includable id='snippetedPostContent'/>\n<b:includable id='snippetedPosts'/>\n<b:includable id='snippetedPostThumbnail'/>\n<b:includable id='snippetedPostTitle'/>\n</b:defaultmarkup>\n<b:defaultmarkup type='Blog'>\n<b:includable id='aboutPostAuthor'/>\n<b:includable id='addComments'/>\n<b:includable id='commentAuthorAvatar'/>\n<b:includable id='commentDeleteIcon'/>\n<b:includable id='commentForm'/>\n<b:includable id='commentFormIframeSrc'/>\n<b:includable id='commentItem'/>\n<b:includable id='commentList'/>\n<b:includable id='commentPicker'/>\n<b:includable id='comments'/>\n<b:includable id='commentsTitle'/>\n<b:includable id='feedLinks'/>\n<b:includable id='feedLinksBody'/>\n<b:includable id='homePageLink'/>\n<b:includable id='iframeComments'/>\n<b:includable id='inlineAd'/>\n<b:includable id='manageComments'/>\n<b:includable id='nextPageLink'/>\n<b:includable id='post'/>\n<b:includable id='postBody'/>\n<b:includable id='postBodySnippet'/>\n<b:includable id='postCommentsAndAd'/>\n<b:includable id='postFooter'/>\n<b:includable id='postFooterAuthorProfile'/>\n<b:includable id='postHeader'/>\n<b:includable id='postPagination'/>\n<b:includable id='postTitle'/>\n<b:includable id='previousPageLink'/>\n<b:includable id='threadedCommentForm'/>\n<b:includable id='threadedCommentJs'/>\n<b:includable id='threadedComments'/>\n</b:defaultmarkup>\n<b:defaultmarkup type='BlogArchive'>\n<b:includable id='flat'/>\n<b:includable id='hierarchy'/>\n<b:includable id='interval'/>\n<b:includable id='posts'/>\n</b:defaultmarkup>\n<b:defaultmarkup type='BlogSearch'>\n<b:includable id='searchForm'/>\n<b:includable id='searchSubmit'/>\n</b:defaultmarkup>\n<b:defaultmarkup type='Header'>\n<b:includable id='behindImageStyle'/>\n<b:includable id='description'/>\n<b:includable id='image'/>\n<b:includable id='title'/>\n</b:defaultmarkup>\n<b:defaultmarkup type='Label'>\n<b:includable id='cloud'/>\n<b:includable id='list'/>\n</b:defaultmarkup>\n<b:defaultmarkup type='PageList'>\n<b:includable id='overflowButton'/>\n<b:includable id='overflowablePageList'/>\n<b:includable id='pageLink'/>\n<b:includable id='pageList'/>\n</b:defaultmarkup>\n<b:defaultmarkup type='Profile'>\n<b:includable id='authorProfileImage'/>\n<b:includable id='defaultProfileImage'/>\n<b:includable id='profileImage'/>\n<b:includable id='teamProfile'/>\n<b:includable id='teamProfileLink'/>\n<b:includable id='userGoogleProfile'/>\n<b:includable id='userLocation'/>\n<b:includable id='userProfile'/>\n<b:includable id='userProfileData'/>\n<b:includable id='userProfileImage'/>\n<b:includable id='userProfileInfo'/>\n<b:includable id='userProfileLink'/>\n<b:includable id='userProfileText'/>\n<b:includable id='viewProfileLink'/>\n</b:defaultmarkup>\n<b:defaultmarkup type='Subscribe'>\n<b:includable id='feeds'/>\n</b:defaultmarkup>\n<b:defaultmarkup type='Common'>\n</b:defaultmarkup>\n</b:defaultmarkups>",
+		"trigger" : "b:defaults\t Eliminar includables"
+	},
+	// expresion
+	{
+		"contents" : "expr:",
+		"trigger" : "expr\t Expresion"
+	},
+	// Atributos comunes
+	{
+		"contents" : "id=\"\"",
+		"trigger" : "id\t Idetificador"
+	}, 
+	{
+		"contents" : "class=\"\"",
+		"trigger" : "class\t Clases"
+	},
+	// Atributos section
+	{
+		"contents" : "ads=\"\"",
+		"trigger" : "ads\t Adsense publicidad"
+	},
+	{
+		"contents" : "maxwidgets=\"\"",
+		"trigger" : "mw\t Numero de widgets"
+	},
+	{
+		"contents" : "preferred=\"\"",
+		"trigger" : "pf\t Section favorita"
+	}, 
+	{
+		"contents" : "cond=\"\"",
+		"trigger" : "cond\t Condicional"
+	}, 
+	{
+		"contents" : "showaddelement=\"\"",
+		"trigger" : "showadd\t Añadir widget"
+	},
+	// Atributos para los widgets
+	{
+		"contents" : "title=\"\"",
+		"trigger" : "title\t Titulo de widget"
+	},
+	{
+		"contents" : "type=\"\"",
+		"trigger" : "type\t Tipo de widget"
+	},
+	{
+		"contents" : "visible=\"\"",
+		"trigger" : "visible\t Visibilidad del widget"
+	},
+	{
+		"contents" : "version=\"{1/2}\"",
+		"trigger" : "version\t Version del widget"
+	},
+	{
+		"contents" : "locked=\"\"",
+		"trigger" : "locked\t Bloquear y desbloquear widget"
+	},
+	// Atributos de los ciclos
+	{
+		"contents" : "values=\"\"",
+		"trigger" : "values\t Valor"
+	},
+	{
+		"contents" : "var=\"\"",
+		"trigger" : "var\t Variables"
+	},
+	// Estructure
+	{
+		"contents" : "<b:section>\n</b:section>",
+		"trigger" : "b-section\t Crear section"
+	},
+	{
+		"contents" : "<b:widget id=\"{idetificador}\" type=\"{tipo de widgets}\" title=\"{titulo}\">\n</b:widget>",
+		"trigger" : "b-widget\t Añadir widget"
+	},
+	{
+		"contents" : "<b:includable type=\"main\"></b:includable>",
+		"trigger" : "b-includable\t Function de blogger"
+	},
+	{
+		"contents" : "<b:include name=\"{includable}\" />",
+		"trigger" : "b-include\t Valor de la function"
+	},
+	{
+		"contents" : "<b:defaultmarkups>\n</b:defaultmarkups>",
+		"trigger" : "b-markups\t Etiqueta de marcados"
+	},
+	{
+		"contents" : "<b:defaultmarkup type=\"{Widget}\">\n</b:defaultmarkup>",
+		"trigger" : "b-markup\t Etiqueta de marcardo"
+	},
+	// Etiquetas datas del Blog
+	{
+		"contents" : "<data:blog.blogId/>",
+		"trigger" : "blog.id\t Idetificador del blog"
+	},
+	{
+		"contents" : "<data:blog.title/>",
+		"trigger" : "blog.title\t Titulo del blog"
+	},
+	{
+		"contents" : "<data:blog.pageTitle/>",
+		"trigger" : "blog.pageTitle\t Titulo de la pagina"
+	},
+	{
+		"contents" : "<data:blog.pageName/>",
+		"trigger" : "blog.pageName\t Nombre de la pagina"
+	},
+	{
+		"contents" : "<data:blog.pageTitle/>",
+		"trigger" : "blog.data:blog.pageTitle\t Titulo de la pagina"
+	},
+	// Etiquetas datas para los posts
+	{
+		"contents" : "<data:post.id/>",
+		"trigger" : "single.id\t Idetificador del posts"
+	},
+	{
+		"contents" : "<data:post.title/>",
+		"trigger" : "single.title\t Titulo del posts"
+	},
+	{
+		"contents" : "<data.post.body/>",
+		"trigger" : "single.body\t Cuerpo de pagina"
+	},
+	{
+		"contents" : "<data:post.snippets.short/>",
+		"trigger" : "single-snippet:short\t Texto corto"
+	},
+	{
+		"contents" : "<data:post.snippets.long/>",
+		"trigger" : "single-snippet:long\t Texto completo"
+	},
+	{
+		"contents" : "<data:post.url/>",
+		"trigger" : "single.url\t Url de posts"
+	},
+	{
+		"contents" : "<data:post.link/>",
+		"trigger" : "single.link\t Link de posts"
+	},
+	{
+		"contents" : "<data:post.thumbnailUrl/>",
+		"trigger" : "single.thumbnail\t Mineatura del articulo"
+	},
+	{
+		"contents" : "<data:post.featuredImage/>",
+		"trigger" : "single.image\t Primera imagen del articulo"
+	},
+	{
+		"contents" : "<data:post.date/>",
+		"trigger" : "single.time\t Tiempo de publicacion"
+	},
+	{
+		"contents" : "<data:post.lastUpdated/>",
+		"trigger" : "single.update\t Tiempo de actualizacion"
+	},
+	{
+		"contents" : "<data:post.hasJumpLink/>",
+		"trigger" : "single.jump\t Salto de linea"
+	},
+	{
+		"contents" : "<data:post.numberOfComments/>",
+		"trigger" : "single.numberComments\t Numero de comentarios"
+	},
+	{
+		"contents" : "<data:posts.size/>",
+		"trigger" : "single.size\t Logitud del articulo"
+	},
+	{
+		"contents" : "<data:post.author.name/>",
+		"trigger" : "single.authorName\t Nombre del author"
+	},
+	{
+		"contents" : "<data:post.author.profileUrl/>",
+		"trigger" : "single.authorUrl\t Url del author"
+	},
+	{
+		"contents" : "<data:post.author.aboutMe/>",
+		"trigger" : "single.authorAbout\t Acerca del author"
+	},
+	{
+		"contents" : "<data:post.author.authorPhoto.image/>",
+		"trigger" : "single.authorPhoto\t Foto de author"
+	},
+	{
+		"contents" : "<data:post.author.authorPhoto.width/>",
+		"trigger" : "single.authorWidth\t Ancho de la foto"
+	},
+	{
+		"contents" : "<data:post.author.authorPhoto.height/>",
+		"trigger" : "single.authorHeight\t Alto de la foto"
+	},
+	// Resource
+	{
+		"contents" : "<script>//<![CDATA[ \n//Agregar Script en blogger \n //]]>\n</script>",
+		"trigger" : "b:scripts\t Scripts para blogger"
+	},
+	{
+		"contents" : "<style>/*<![CDATA[*/\n/* Agrega CSS en Blogger */\n/*]]>*/</style>",
+		"trigger" : "b:styles\t Estilos para blogger"
+	},
+	// Variables
+	{
+		"contents" : "<Variable name=\"\" description=\"\" type=\"\" value=\"\" />",
+		"trigger" : "b-var \t variable de configuracíon"
+	},
+	// if condicionales
+	{
+		"contents" : "<b:if cond=\"\"></b:if>",
+		"trigger": "b-if\t Condicional blogger"
+	},
+	{
+		"contents" : "<b:elseif cond=\"{Condicion}\" />",
+		"trigger": "b-elseif\t Caso contrario"
+	},
+	{
+		"contents" : "<b:else/>",
+		"trigger": "b-else\t caso contrario verdadero"
+	},
+	// Condicionales del blog
+	{
+		"contents" : "<b:if cond='data:view.isHomepage'>\n<!-- Homepage -->\n</b:if>",
+		"trigger" : "b-if:homepage"
+	},
+	{
+		"contents" : "<b:if cond'data:view.isMultipleItems'>\n<!-- Lista de artículos -->\n</b:if>",
+		"trigger" : "b-if:items"
+	},
+	{
+		"contents" : "<b:if cond='data:view.isSingleItem'>\n<!-- Post / Page static -->\n</b:if>",
+		"trigger" : "b-if:single"
+	},
+	{
+		"contents" : "<b:if cond='data:view.isPost'>\n<!-- Post -->\n</b:if>",
+		"trigger" : "b-if:post"
+	},
+	{
+		"contents" : "<b:if cond='data:view.isPage'>\n<!-- Page static -->\n</b:if>",
+		"trigger" : "b-if:page"
+	},
+	{
+		"contents" : "<b:if cond='data:view.isSearch'>\n<!-- Búsqueda -->\n</b:if>",
+		"trigger" : "b-if:search"
+	},
+	{
+		"contents" : "<b:if cond='data:view.isLabelSearch'>\n<!-- Label search -->\n</b:if>",
+		"trigger" : "b-if:searchLabel"
+	},
+	{
+		"contents" : "<b:if cond='data:view.isError'><!-- Page Error --></b:if>",
+		"trigger" : "b-if:404"
+	},
+	// Shorcodes
+	{
+		"contents" : "cond=\"data:view.isHomepage\"",
+		"trigger" : "home\t Pagina principal"
+	},
+	{
+		"contents" : "cond=\"data:view.isMultipleItems\"",
+		"trigger" : "items\t Lista entradas"
+	},
+	{
+		"contents" : "cond=\"data:view.isSingleItem\"",
+		"trigger" : "single:items\t Pagina y articulos"
+	},
+	{
+		"contents" : "cond=\"data:view.isPost\"",
+		"trigger" : "posts\t Articulos"
+	},
+	{
+		"contents" : "cond=\"data:view.isPage\"",
+		"trigger" : "pages\t Pagina estaticas"
+	},
+	{
+		"contents" : "cond=\"data:view.isSearch\"",
+		"trigger" : "search\t Busqueda"
+	},
+	{
+		"contents" : "cond=\"data:view.isLabelSearch\"",
+		"trigger" : "searchLabel\t Busqueda por etiquetas"
+	},
+	{
+		"contents" : "cond=\"data:view.isError\"",
+		"trigger" : "404 \t Error 404"
+	},
+	// Comentarios
+	{
+		"contents" : "<b:comment render=\"true\">{Comentario de blogger}</b:comment>",
+		"trigger" : "b-comment\t Comentario de blogger"
+	},
+	// Type widget
+	{
+		"contents" : "type=\"Common\"",
+		"trigger" : "type-common\t Widget Common"
+	},
+	{
+		"contents" : "type=\"Blog\"",
+		"trigger" : "type-blog\t Widget Blog"
+	},
+	{
+		"contents" : "type=\"AdSense\"",
+		"trigger" : "type-ads\t Widget adsense"
+	},
+	{
+		"contents" : "type=\"Attribution\"",
+		"trigger" : "type-att\t Widget Attribution"
+	},
+	{
+		"contents" : "type=\"BlogArchive\"",
+		"trigger" : "type-archive\t Widget BlogArchive"
+	},
+	{
+		"contents" : "type=\"BloggerButton\"",
+		"trigger" : "type-blogger\t Widget BloggerButton"
+	},
+	{
+		"contents" : "type=\"BlogList\"",
+		"trigger" : "type-BlogList\t Widget BlogList"
+	},
+	{
+		"contents" : "type=\"BlogSearch\"",
+		"trigger" : "type-BlogSearch\t Widget BlogSearch"
+	},
+	{
+		"contents" : "type=\"ContactForm\"",
+		"trigger" : "type-ContactForm\t Formulario de contacto"
+	},
+	{
+		"contents" : "type=\"FeaturedPost\"",
+		"trigger" : "type-FeaturedPost\t FeaturedPost"
+	},
+	{
+		"contents" : "type=\"Feed\"",
+		"trigger" : "type-Feed\t Feed"
+	},
+	{
+		"contents" : "type=\"Followers\"",
+		"trigger" : "type-Followers\t Seguidores"
+	},
+	{
+		"contents" : "type=\"Header\"",
+		"trigger" : "type-Header\t Cabecera"
+	},
+	{
+		"contents" : "type=\"HTML\"",
+		"trigger" : "type-HTML\t HTML - Javascript"
+	},
+	{
+		"contents" : "type=\"Image\"",
+		"trigger" : "type-Image\t Image"
+	},
+	{
+		"contents" : "type=\"Label\"",
+		"trigger" : "type-Label\t Label"
+	},
+	{
+		"contents" : "type=\"LinkList\"",
+		"trigger" : "type-LinkList\t LinkList"
+	},
+	{
+		"contents" : "type=\"Navbar\"",
+		"trigger" : "type-Navbar\t Barra de navegacion"
+	},
+	{
+		"contents" : "type=\"PageList\"",
+		"trigger" : "type-PageList\t PageList"
+	},
+	{
+		"contents" : "type=\"PopularPosts\"",
+		"trigger" : "type-PopularPosts\t PopularPosts"
+	},
+	{
+		"contents" : "type=\"Profile\"",
+		"trigger" : "type-Profile\t Perfil"
+	},
+	{
+		"contents" : "type=\"ReportAbuse\"",
+		"trigger" : "type-ReportAbuse\t Reporar abuso"
+	},
+	{
+		"contents" : "type=\"Stats\"",
+		"trigger" : "type-Stats\t Estadísticas del blog"
+	},
+	{
+		"contents" : "type=\"Subscribe\"",
+		"trigger" : "type-Subscribe\t Subscribe"
+	},
+	{
+		"contents" : "type=\"Text\"",
+		"trigger" : "type-Text\t Texto"
+	},
+	{
+		"contents" : "type=\"TextList\"",
+		"trigger" : "type-TextList\t TextList"
+	},
+	{
+		"contents" : "type=\"Translate\"",
+		"trigger" : "type-Translate\t Traducción"
+	},
+	{
+		"contents" : "type=\"Wikipedia\"",
+		"trigger" : "type-Wikipedia\t Wikipedia"
+	},
+	// Bucles
+	{
+		"contents" : "<b:loop values=\"{}\" var=\"{variable}\">\n    <data:variable.name/>\n</b:loops>",
+		"trigger" : "b-loops\t Bucle"
+	},
+	{
+		"contents" : "<b:with values=\"{}\" var=\"{variable}\">\n</b:with>",
+		"trigger" : "b-with\t With"
+	},
+	{
+		"contents" : "<b:switch var=\"{variable}\">\n</b:switch>",
+		"trigger" : "switch\t Switch"
+	},
+	{
+		"contents" : "<b:case var=\"{variable}\" />",
+		"trigger" : "switch case\t Case switch"
+	},
+	{
+		"contents" : "<b:defaults/>",
+		"trigger" : "switch-default\t Defaults switch"
+	},
+	{
+		"contents" : "<attr cond=\"{atributos}\" name=\"{name}\" value=\"{value}\" />",
+		"trigger" : "atrr\t Etiquetas de atributos"
+	},
+	// funciones comunes
+	{
+		"contents" : "<b:includable id='@:ads'>\n<b:tag class='adsbygoogle' data-full-width-responsive='true' name='ins'>\n<b:attr expr:value='data:slot' name='data-ad-slot'/>\n<b:attr expr:value='data:adClientId ?: data:blog.adsenseClientId' name='data-ad-client'/>\n<b:attr expr:value='data:blog.adsenseHostId' name='data-ad-host'/>\n<b:attr expr:value='data:layout ? &quot;fluid&quot; : &quot;auto&quot;' name='data-ad-format'/>\n<b:attr expr:name='&quot;data-ad-layout&quot; + (data:layout != &quot;in-article&quot; ? &quot;-key&quot; : &quot;&quot;)' expr:value='data:layout'/>\n<b:attr expr:value='data:style ?: &quot;display: block&quot;' name='style'/>\n</b:tag>\n<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>\n</b:includable>",
+		"trigger" : "@ads"
+	},
+	{
+		"contents" : "<b:includable id='@:adsense'>\n   <b:if cond='data:blog.adsenseHostId and not data:blog.adsenseAutoAds'>\n    <b:tag async='async' cond='data:blog.adsenseClientId and data:blog.adsenseHasAds' crossorigin='anonymous' expr:src='&quot;//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot; params {client: data:blog.adsenseClientId}' name='script'/>\n   </b:if>\n</b:includable>",
+        "trigger": "@adsense"
+	},
+	{
+		"contents": "<b:includable id='@:attr'>\n   <b:loop values='data:' var='i'><b:attr expr:name='data:i[0] ?: &quot;null&quot;' expr:value='data:i[1]'/>\n   </b:loop>\n</b:includable>",
+		"trigger" : "@atrr"
+	},
+	{
+		"contents": "<b:includable id='@:meta'>\n    <meta expr:charset='data:blog.encoding'/>\n    <meta content='width=device-width,initial-scale=1' name='viewport'/>\n    <b:if cond='data:widgets'>\n      <meta expr:content='data:skin.vars.body_background_color' name='theme-color'/>\n      <meta expr:content='data:skin.vars.body_background_color' name='msapplication-navbutton-color'/>\n    </b:if>\n<b:if cond='data:favicon'>\n<b:loop values='(data:favSizes ?: [32,96,180,192])' var='size'>\n<link expr:href='resizeImage(data:favicon, data:size, &quot;1:1&quot;)' expr:sizes='data:size + &quot;x&quot; + data:size' rel='icon' type='image/png'/>\n</b:loop> <b:else/> <link expr:href='data:blog.blogspotFaviconUrl' rel='icon' type='image/x-icon'/>\n</b:if>\n<meta expr:content='data:view.description.escaped' name='description'/>\n<b:with value='data:https ? data:view.url.canonical.https : data:view.url.canonical' var='canonical'>\n<link expr:href='data:canonical' rel='canonical'/>\n<meta expr:content='data:canonical' property='og:url'/>\n<meta expr:content='data:canonical' name='twitter:url'/>\n</b:with>\n<meta expr:content='data:view.isHomepage or data:view.isSingleItem ? (data:robots ?: &quot;index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1&quot;) : &quot;noindex,follow&quot;' name='robots'/>\n<meta expr:content='not data:view.isSingleItem ? &quot;article&quot; : &quot;website&quot;' property='og:type'/>\n<meta expr:content='data:view.title.escaped' property='og:title'/>\n<meta expr:content='data:view.description.escaped' property='og:description'/>\n<b:if cond='data:view.featuredImage or data:ogImage or data:widgets.Blog.first.posts.first.featuredImage'> <b:with value='resizeImage((data:view.featuredImage ?: (data:ogImage != &quot;&quot; ? data:ogImage : data:widgets.Blog.first.posts.first.featuredImage)), 1200, &quot;1200:630&quot;)' var='image'> <meta expr:content='data:image' property='og:image'/> <meta expr:content='data:image' name='twitter:image'/>\n<b:if cond='data:image.isResizable'>\n<meta expr:content='data:image.width' property='og:image:width'/>\n<meta expr:content='data:image.height' property='og:image:height'/>\n</b:if>\n</b:with>\n</b:if>\n<meta expr:content='data:cardType ?: &quot;summary_large_image&quot;' name='twitter:card'/>\n<meta expr:content='data:view.description.escaped' name='twitter:description'/>\n</b:includable>\n<b:includable id='head:content'>\n<b:include name='@:meta'/>\n<b:include name='@:adsense'/>\n</b:includable>", 
+		"trigger" : "@meta"
+	},
+	{
+		"contents": "<!-- SEO BLOGGER -->\n<meta expr:charset='data:blog.encoding'/>\n<meta content='width=device-width,initial-scale=1' name='viewport'/>\n<b:if cond='data:widgets'>\n<meta expr:content='data:skin.vars.body_background_color' name='theme-color'/>\n<meta expr:content='data:skin.vars.body_background_color' name='msapplication-navbutton-color'/>\n</b:if>\n<b:if cond='data:favicon'>\n<b:loop values='(data:favSizes ?: [32,96,180,192])' var='size'>\n<link expr:href='resizeImage(data:favicon, data:size, &quot;1:1&quot;)' expr:sizes='data:size + &quot;x&quot; + data:size' rel='icon' type='image/png'/>\n</b:loop> <b:else/> <link expr:href='data:blog.blogspotFaviconUrl' rel='icon' type='image/x-icon'/>\n</b:if>\n<meta expr:content='data:view.description.escaped' name='description'/>\n<b:with value='data:https ? data:view.url.canonical.https : data:view.url.canonical' var='canonical'>\n<link expr:href='data:canonical' rel='canonical'/>\n<meta expr:content='data:canonical' property='og:url'/>\n<meta expr:content='data:canonical' name='twitter:url'/>\n</b:with>\n<meta expr:content='data:view.isHomepage or data:view.isSingleItem ? (data:robots ?: &quot;index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1&quot;) : &quot;noindex,follow&quot;' name='robots'/>\n<meta expr:content='not data:view.isSingleItem ? &quot;article&quot; : &quot;website&quot;' property='og:type'/>\n<meta expr:content='data:view.title.escaped' property='og:title'/>\n<meta expr:content='data:view.description.escaped' property='og:description'/>\n<b:if cond='data:view.featuredImage or data:ogImage or data:widgets.Blog.first.posts.first.featuredImage'>\n<b:with value='resizeImage((data:view.featuredImage ?: (data:ogImage != &quot;&quot; ? data:ogImage : data:widgets.Blog.first.posts.first.featuredImage)), 1200, &quot;1200:630&quot;)' var='image'> <meta expr:content='data:image' property='og:image'/>\n<meta expr:content='data:image' name='twitter:image'/>\n<b:if cond='data:image.isResizable'>\n<meta expr:content='data:image.width' property='og:image:width'/>\n<meta expr:content='data:image.height' property='og:image:height'/>\n</b:if>\n</b:with>\n</b:if>\n<meta expr:content='data:cardType ?: &quot;summary_large_image&quot;' name='twitter:card'/>\n<meta expr:content='data:view.description.escaped' name='twitter:description'/>", 
+		"trigger" : "seo:blogger\t Metadatos para seo"
+	},
+	{
+		"contents": "",
+		"trigger" : ""
+	},
+	{
+		"contents": "",
+		"trigger" : ""
+	},
+	{
+		"contents": "",
+		"trigger" : ""
+	}
+	]
+}
